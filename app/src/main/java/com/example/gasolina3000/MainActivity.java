@@ -85,11 +85,11 @@ public class MainActivity extends AppCompatActivity {
         porcentI = impo1 + impo2;
 
         txtResultado.setText(resultadoD + df.format(valorF));
-        txtPetro.setText(petroD + df.format(preco1) + "(" + df.format(porcentP) + ")");
+        txtPetro.setText(petroD + df.format(preco1) + "(" + df.format(porcentP) + "%)");
         pbPetro.setProgress((int) Math.round(porcentP));
-        txtRevenda.setText(revendaD + df.format(valorR) + "(" + df.format(porc2) + ")");
+        txtRevenda.setText(revendaD + df.format(valorR) + "(" + df.format(porc2) + "%)");
         pbRevenda.setProgress((int) Math.round(porc2));
-        txtImposto.setText(impostoD + df.format(valorI) + "(" + df.format(porcentI) + ")");
+        txtImposto.setText(impostoD + df.format(valorI) + "(" + df.format(porcentI) + "%)");
         pbImposto.setProgress((int) Math.round(porcentI));
     }
 
